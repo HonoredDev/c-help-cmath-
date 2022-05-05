@@ -1,0 +1,64 @@
+//I need help with my assignment. I'm unable to get the correct answer on the file source of my assignment. this is my code below. 
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int b, x, y, choice;
+    double Ans1, Ans2, Ans3;
+    cout<<"1- Calculate sin"<<"\n";
+    cout<<"1- Calculate cos"<<"\n";
+    cout<<"1- Calculate tan"<<"\n";
+    cout<<"Please make your chocie: ";
+    cin>>choice;
+    switch (choice)
+    {
+        case 1:
+            cout<<"Please enter the value of b: ";
+            cin>>b;
+            cout<<"Please enter the value of x: ";
+            cin>>x;
+            cout<<"Please enter the value of y: ";
+            cin>>y;
+            Ans1 = sin((pow(x, b)) + sqrt(b + pow(y, x)));
+            
+    //The answer on the file document is -0.958508 and I got -0.958524
+            
+            cout<<"The result of formula is: "<< Ans1 <<"\n";
+            break;
+            
+        case 2:
+            cout<<"Please enter the value of b: ";
+            cin>>b;
+            cout<<"Please enter the value of x: ";
+            cin>>x;
+            cout<<"Please enter the value of y: ";
+            cin>>y;
+            Ans2 = cos((y + (exp(b)) / x + pow(x, 5)));
+            
+    // Answer on file is 0.320106 and I got 0.320089
+            
+            cout<<"The result of formula is: "<< Ans2 <<"\n";
+            break;
+            
+        case 3:
+            cout<<"Please enter the value of b: ";
+            cin>>b;
+            cout<<"Please enter the value of x: ";
+            cin>>x;
+            cout<<"Please enter the value of y: ";
+            cin>>y;
+            
+// I tried my best and I couldn't fix the answer, but I will keep trying, I just need to submit already because of time.
+            
+            Ans3 = tan (x + (((b + pow(x, y))) / (pow(x, 5) + exp(2 * y))));
+// I got 1.20445 instead of -0.433889
+            cout<<"The result of formula is: "<< Ans3 <<"\n";
+            break;
+        default:
+            cout<<"Wrong input" <<"\n";
+            break;
+    }
+        return 0;
+}
